@@ -2,10 +2,10 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.box = "precise64"
+  config.vm.box = "ubuntu/precise64"
   config.vm.hostname = "server.puppetlabs.test"
 
-  config.vm.network :forwarded_port, guest: 80, host: 8080
+  config.vm.network :forwarded_port, guest: 80, host: 8081
   config.vm.network :forwarded_port, guest: 389, host: 3890
 
   config.vm.network :private_network, ip: "192.168.33.20"

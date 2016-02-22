@@ -36,3 +36,13 @@ returns KielstrG uid directory listing
 jfryman/puppet-openldap openldap module used as submodule
 
 Random LDAP entries generated and loaded via output.ldif (http://ldapwiki.willeke.com/wiki/LDIF%20Generator)
+
+# In Jenkins the configuration needs to look like this 
+
+* Server: ldap://127.0.0.1:3890
+* root DN: dc=brodate,dc=net
+* User search filter: uid={0} or cn={0}
+* Manager DN: cn=dsadmin,dc=brodate,dc=net
+* Manager Password: test
+
+Then, to log-in for example: SharmaA/Sharma

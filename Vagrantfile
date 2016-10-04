@@ -2,6 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
+# vm.box is described as "a/b"	
   config.vm.box = "ubuntu/precise64"
   config.vm.hostname = "server.puppetlabs.test"
 

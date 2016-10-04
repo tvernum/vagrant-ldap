@@ -31,9 +31,9 @@ returns entire directory
 From returns entire directory previously, select an `uid` and use it for the following example. In the example `uid=eric.tiger`
 
 ```
-ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:389 uid=KielstrG
+ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:389 uid=eric.tiger
 
-returns KielstrG uid directory listing
+returns eric.tiger uid directory listing
 ```
 jfryman/puppet-openldap openldap module used as submodule
 

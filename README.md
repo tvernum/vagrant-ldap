@@ -28,6 +28,8 @@ ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h l
 returns entire directory
 ```
 
+From returns entire directory previously, select an `uid` and use it for the following example. In the example `uid=eric.tiger`
+
 ```
 ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:389 uid=KielstrG
 

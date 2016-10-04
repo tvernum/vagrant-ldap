@@ -23,13 +23,13 @@ You can update the domain to something other than what I have it set to, dc=brod
 Example searches after vagrant up:
 
 ```
-ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:3890
+ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:389
 
 returns entire directory
 ```
 
 ```
-ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:3890 uid=KielstrG
+ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:389 uid=KielstrG
 
 returns KielstrG uid directory listing
 ```

@@ -23,15 +23,17 @@ You can update the domain to something other than what I have it set to, dc=brod
 Example searches after vagrant up:
 
 ```
-ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:3890
+ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:389
 
 returns entire directory
 ```
 
-```
-ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:3890 uid=KielstrG
+From returns entire directory previously, select an `uid` and use it for the following example. In the example `uid=eric.tiger`
 
-returns KielstrG uid directory listing
+```
+ldapsearch -w test -D "cn=dsadmin,dc=brodate,dc=net" -b "dc=brodate,dc=net" -h localhost:389 uid=eric.tiger
+
+returns eric.tiger uid directory listing
 ```
 jfryman/puppet-openldap openldap module used as submodule
 
